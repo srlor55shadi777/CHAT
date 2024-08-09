@@ -11,6 +11,11 @@ function sendMessage() {
     }
 }
 
+function showInquiryOptions() {
+    document.getElementById("initial-buttons").style.display = "none";
+    document.getElementById("inquiry-options").style.display = "block";
+}
+
 function handleQuickReply(reply) {
     addMessageToChat(reply, "user-message");
 
