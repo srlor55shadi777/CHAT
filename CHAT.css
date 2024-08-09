@@ -13,6 +13,7 @@ body {
 .chat-container {
     width: 100%;
     max-width: 400px;
+    height: 90vh; /* لتحديد حجم الشات */
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -33,6 +34,8 @@ body {
     padding: 15px;
     overflow-y: auto;
     background-color: #e5ddd5;
+    display: flex;
+    flex-direction: column;
 }
 
 .message {
@@ -83,4 +86,5 @@ button:hover {
 .buttons {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
