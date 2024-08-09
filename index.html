@@ -16,10 +16,12 @@
             <div class="message bot-message">
                 مرحباً اهـلا بـك انا بـوت ماريا مساعدة خدمة العملاء بماذا أساعدك؟
             </div>
-            <div class="buttons">
-                <button onclick="handleQuickReply('استفسار')">استفسار</button>
-                <button onclick="handleQuickReply('مساعدة فنية')">مساعدة فنية</button>
-                <button onclick="handleQuickReply('دعم')">دعم</button>
+            <div class="message bot-message" id="inquiry">
+                استفسار
+            </div>
+            <div class="buttons" id="inquiry-buttons">
+                <button onclick="handleQuickReply('من هو مطور عشوائيات لور؟')">من هو مطور عشوائيات لور؟</button>
+                <button onclick="handleQuickReply('ماذا يقدم التطبيق!')">ماذا يقدم التطبيق!</button>
             </div>
         </div>
         <div class="input-container">
@@ -30,4 +32,4 @@
     <!-- ربط ملف JavaScript -->
     <script src="CHAT.js"></script>
 </body>
-              </html>
+</html>
