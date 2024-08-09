@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بوت خدمة العملاء</title>
+    <!-- ربط ملف CSS -->
+    <link rel="stylesheet" href="CHAT.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>بوت ماريا - خدمة العملاء</h2>
+        </div>
+        <div class="chat-box" id="chat-box">
+            <div class="message bot-message">
+                مرحباً اهـلا بـك انا بـوت ماريا مساعدة خدمة العملاء بماذا أساعدك؟
+            </div>
+            <div class="buttons">
+                <button onclick="handleQuickReply('استفسار')">استفسار</button>
+                <button onclick="handleQuickReply('مساعدة فنية')">مساعدة فنية</button>
+                <button onclick="handleQuickReply('دعم')">دعم</button>
+            </div>
+        </div>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="اكتب رسالتك هنا...">
+            <button id="send-btn">إرسال</button>
+        </div>
+    </div>
+    <!-- ربط ملف JavaScript -->
+    <script src="CHAT.js"></script>
+</body>
+              </html>
